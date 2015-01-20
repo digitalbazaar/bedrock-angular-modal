@@ -1,0 +1,7 @@
+{
+  "name": "bedrock-angular-modal",
+  "main": "./app.js",
+  "ignore": [],
+  "dependencies": {
+  }
+}
