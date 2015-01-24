@@ -1,6 +1,7 @@
 {
   "name": "bedrock-angular-modal",
-  "main": "./app.js",
+  "main": "./modal.js",
+  "moduleType": ["amd"],
   "ignore": [],
   "dependencies": {
   }
