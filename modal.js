@@ -13,7 +13,7 @@ define([
 
 'use strict';
 
-var module = angular.module('app.modal', []);
+var module = angular.module('bedrock.modal', []);
 
 module.directive(alertModal);
 module.directive(modal);
