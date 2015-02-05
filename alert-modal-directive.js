@@ -5,11 +5,9 @@
  *
  * @author Dave Longley
  */
-define(['module'], function(module) {
+define([], function() {
 
 'use strict';
-
-var modulePath = module.uri.substr(0, module.uri.lastIndexOf('/')) + '/';
 
 /* @ngInject */
 function factory() {
@@ -22,7 +20,7 @@ function factory() {
       cancel: '@brModalCancel'
     },
     transclude: true,
-    templateUrl: modulePath + 'alert-modal.html',
+    templateUrl: requirejs.toUrl('bedrock-angular-modal/alert-modal.html'),
     link: function(scope, element, attrs, stackable) {
       scope.stackable = stackable;
     }
