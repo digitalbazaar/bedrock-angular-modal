@@ -3,8 +3,7 @@
   "main": ["./modal.js", "./modal.less"],
   "moduleType": ["amd"],
   "ignore": [
-    "bedrock",
-    "bedrock.json"
+    "bedrock/prepare"
   ],
   "dependencies": {
     "bedrock-angular": "~0.0.1"

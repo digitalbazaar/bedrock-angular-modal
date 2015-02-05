@@ -7,11 +7,15 @@ var path = require('path');
 
 module.exports = function(bedrock) {
   if(bedrock.config.protractor) {
-    var config = bedrock.config.protractor.config;
+    var protractor = bedrock.config.protractor.config;
     // add protractor tests
-    //config.suites['bedrock-angular-modal'] =
+    //protractor.suites['bedrock-angular-modal'] =
     //  path.join(__dirname, './tests/**/*.js');
-    config.params.config.onPrepare.push(
+    protractor.params.config.onPrepare.push(
       path.join(__dirname, './prepare'));
   }
+
+  bedrock.config.requirejs.config.shim['dialog-polyfill'] = {
+    exports: 'dialogPolyfill'
+  };
 };
