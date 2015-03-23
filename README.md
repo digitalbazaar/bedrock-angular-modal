@@ -13,15 +13,13 @@ An [AngularJS][] module that provides [bootstrap][]-styled, stackable modals.
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <a class="close stackable-cancel">&times;<span
-            class="sr-only">Close</span></a>
+          <a class="close stackable-cancel">&times;</a>
           <h3 class="modal-title">My Modal</h3>
         </div>
         <div class="modal-body">
           <p>Some modal content...</p>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary"><i
-            class="fa fa-check"></i> Ok</button>
+          <button type="button" class="btn btn-primary">Ok</button>
           <button type="button"
             class="btn btn-default stackable-cancel">Cancel</button>
         </div>
