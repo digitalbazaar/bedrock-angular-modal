@@ -13,7 +13,7 @@ define([
 
 'use strict';
 
-var module = angular.module('bedrock.modal', []);
+var module = angular.module('bedrock.modal', ['stackables']);
 
 module.directive(alertModal);
 module.directive(modal);
