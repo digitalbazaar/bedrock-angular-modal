@@ -1,7 +1,4 @@
 # bedrock-angular-modal
-Bedrock AngularJS Modals
-
-# bedrock-angular-modal
 
 An [AngularJS][] module that provides [bootstrap][]-styled, stackable modals.
 
