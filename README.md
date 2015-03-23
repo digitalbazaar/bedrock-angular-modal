@@ -40,6 +40,52 @@ initial page render time:
 </stackable-modal>
 ```
 
+To show a simple alert modal:
+
+```html
+<stackable-modal stackable="model.showAlert"
+  stackable-closing="model.confirm(err, result)"
+  stackable-closed="model.alertClosed(err, result)">
+  <div br-alert-modal
+    br-modal-header="Warning"
+    br-modal-ok="Ok"
+    br-modal-cancel="Cancel">
+    <div class="text-center alert alert-danger">
+      <strong>Warning!</strong>
+      What you're about to do is dangerous!
+    </div>
+    <p>Are you sure that you want to?</p>
+  </div>
+</stackable-modal>
+```
+
+```js
+// called when the alert is closing
+modal.confirm = function(err, result) {
+  if(!err && result === 'ok') {
+    // can return a Promise that resolves to `false` or just `false` to cancel
+    // closing the alert; returning anything else won't cancel
+    return new Promise(function(resolve, reject) {
+      // ...
+    }).catch(function(err) {
+      console.log('Error', err);
+      // cancel closing the alert by returning false
+      return false;
+    });
+  }
+};
+
+// called after the alert is closed
+model.alertClosed = function(err, result) {
+  if(!err && result === 'ok') {
+    console.log('doing the dangerous thing...');
+  }
+};
+```
+
+For more information on the various `stackable-modal` features available,
+see [angular-stackables][].
+
 ## Setup
 
 ```
@@ -61,6 +107,7 @@ angular.module('myapp', ['bedrock.modal']);
 TODO:
 
 
+[angular-stackables]: https://github.com/digitalbazaar/angular-stackables
 [bedrock]: https://github.com/digitalbazaar/bedrock
 [bedrock-angular]: https://github.com/digitalbazaar/bedrock-angular
 [bootstrap]: http://getbootstrap.com/
