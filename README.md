@@ -107,6 +107,7 @@ TODO:
 [angular-stackables]: https://github.com/digitalbazaar/angular-stackables
 [bedrock]: https://github.com/digitalbazaar/bedrock
 [bedrock-angular]: https://github.com/digitalbazaar/bedrock-angular
+[bedrock-angular-lazy-compile]: https://github.com/digitalbazaar/bedrock-angular-lazy-compile
 [bootstrap]: http://getbootstrap.com/
 [bower]: http://bower.io/
 [AngularJS]: https://github.com/angular/angular.js
