@@ -99,9 +99,9 @@ To manually add **bedrock-angular-modal** as a dependency:
 angular.module('myapp', ['bedrock.modal']);
 ```
 
-## How It Works
+<!-- ## How It Works
 
-TODO:
+TODO: -->
 
 
 [angular-stackables]: https://github.com/digitalbazaar/angular-stackables
