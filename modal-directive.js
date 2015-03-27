@@ -14,6 +14,7 @@ function factory() {
   return {
     restrict: 'C',
     transclude: true,
+    /* jshint multistr: true */
     template: '\
       <div br-lazy-compile="!stackable || stackable.isOpen" br-lazy-id="br-modal"> \
         <div br-alerts br-fixed="true"></div> \
