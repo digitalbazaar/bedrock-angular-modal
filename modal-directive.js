@@ -49,7 +49,7 @@ function brModal() {
               <div class="modal-footer"> \
                 <div ng-multi-transclude="br-modal-footer"> \
                   <button type="button" \
-                    class="btn btn-default stackable-cancel">Close</button> \
+                    class="btn btn-default stackable-cancel">Cancel</button> \
                 </div> \
               </div> \
             </div> \
