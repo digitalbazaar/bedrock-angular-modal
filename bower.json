@@ -8,6 +8,6 @@
   ],
   "dependencies": {
     "bedrock-angular": "^1.0.0",
-    "angular-stackables": "~0.0.30"
+    "angular-stackables": "^1.0.0"
   }
 }
