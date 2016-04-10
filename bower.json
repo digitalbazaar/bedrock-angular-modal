@@ -1,13 +1,13 @@
 {
   "name": "bedrock-angular-modal",
-  "version": "1.0.1-dev",
+  "version": "2.0.0",
   "main": ["./modal.js", "./modal.less"],
   "moduleType": ["amd"],
   "ignore": [
     "bedrock/prepare"
   ],
   "dependencies": {
-    "bedrock-angular": "^1.0.0",
+    "bedrock-angular": "^2.0.0",
     "angular-stackables": "^1.0.0"
   }
 }
