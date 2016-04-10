@@ -30,7 +30,11 @@ function brModal() {
     restrict: 'E',
     require: '^stackable',
     scope: {title: '@?brTitle'},
-    transclude: true,
+    transclude: {
+      'br-modal-header': '?brModalHeader',
+      'br-modal-body': '?brModalBody',
+      'br-modal-footer': '?brModalFooter'
+    },
     /* jshint multistr: true */
     template: '\
       <div class="modal"> \
@@ -38,16 +42,19 @@ function brModal() {
           <div class="modal-content"> \
             <div ng-multi-transclude-controller> \
               <div class="modal-header"> \
-                <div ng-multi-transclude="br-modal-header"> \
+                <div ng-multi-transclude="br-modal-header" \
+                  ng-transclude="br-modal-header"> \
                   <a class="close stackable-cancel">&times;</a> \
                   <h3 class="modal-title">{{title}}</h3> \
                 </div> \
               </div> \
               <div class="modal-body"> \
-                <div ng-multi-transclude="br-modal-body"/> \
+                <div ng-multi-transclude="br-modal-body" \
+                  ng-transclude="br-modal-body"></div> \
               </div> \
               <div class="modal-footer"> \
-                <div ng-multi-transclude="br-modal-footer"> \
+                <div ng-multi-transclude="br-modal-footer" \
+                  ng-transclude="br-modal-footer"> \
                   <button type="button" \
                     class="btn btn-default stackable-cancel">Cancel</button> \
                 </div> \
