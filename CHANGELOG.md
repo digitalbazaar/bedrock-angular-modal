@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [2.1.0] - 2016-04-10
+
+### Added
+- Support angular 1.5 multi-transclude syntax.
+
 ## [2.0.0] - 2016-04-09
 
 ### Changed
@@ -16,6 +21,7 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/1.0.0...2.0.0
 [1.0.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/0.1.0...1.0.0
