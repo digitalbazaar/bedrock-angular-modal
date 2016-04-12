@@ -7,14 +7,14 @@ An [AngularJS][] module that provides [bootstrap][]-styled, stackable modals.
 ```html
 <stackable-modal stackable="model.showMyModal">
   <br-modal br-title="My Modal">
-    <div name="br-modal-body">
+    <br-modal-body>
       <p>Some modal content...</p>
-    </div>
-    <div name="br-modal-footer">
+    </br-modal-body>
+    <br-modal-footer>
       <button type="button" class="btn btn-primary">Ok</button>
       <button type="button"
         class="btn btn-default stackable-cancel">Cancel</button>
-    </div>
+    </br-modal-footer>
   </br-modal>
 </stackable-modal>
 ```
@@ -26,7 +26,7 @@ initial page render time:
 ```html
 <stackable-modal stackable="model.showMyModal"
   br-lazy-compile="model.showMyModal" br-lazy-id="my-modal">
-  <my-modal-directive></my-modal-directive>
+  <my-modal-component></my-modal-component>
 </stackable-modal>
 ```
 
@@ -36,7 +36,7 @@ To show a simple alert modal:
 <stackable-modal stackable="model.showAlert"
   stackable-closing="model.confirm(err, result)"
   stackable-closed="model.alertClosed(err, result)">
-  <div br-alert-modal
+  <br-alert-modal
     br-modal-header="Warning"
     br-modal-ok="Ok"
     br-modal-cancel="Cancel">
@@ -45,7 +45,7 @@ To show a simple alert modal:
       What you're about to do is dangerous!
     </div>
     <p>Are you sure that you want to?</p>
-  </div>
+  </br-alert-modal>
 </stackable-modal>
 ```
 
