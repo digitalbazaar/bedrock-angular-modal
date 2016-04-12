@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [3.0.0] - 2016-04-12
+
+### Changed
+- Use angular 1.5 component API.
+- **BREAKING**: Disallow br-alert-modal as attribute.
+
 ## [2.2.0] - 2016-04-12
 
 ### Added
@@ -26,7 +32,8 @@
 
 - See git history for changes.
 
-[Unreleased]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.2.0...HEAD
+[Unreleased]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/3.0.0...HEAD
+[3.0.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.2.0...3.0.0
 [2.2.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/digitalbazaar/bedrock-angular-modal/compare/1.0.0...2.0.0
