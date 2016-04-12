@@ -12,7 +12,7 @@ define([], function() {
 /* @ngInject */
 function factory() {
   return {
-    restrict: 'A',
+    restrict: 'EA',
     require: '^stackable',
     scope: {
       header: '@brModalHeader',
