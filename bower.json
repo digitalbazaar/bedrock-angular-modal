@@ -1,6 +1,6 @@
 {
   "name": "bedrock-angular-modal",
-  "version": "3.0.1-dev",
+  "version": "3.0.1",
   "main": ["./main.js", "./modal.less"],
   "moduleType": ["amd"],
   "ignore": [
