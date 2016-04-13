@@ -20,6 +20,4 @@ Array.prototype.slice.call(arguments, 1).forEach(function(dep) {
   dep(module);
 });
 
-return module.name;
-
 });
