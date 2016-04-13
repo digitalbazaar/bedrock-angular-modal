@@ -11,7 +11,7 @@ define([], function() {
 
 function register(module) {
   // 'modal' replaces bootstrap "modal" class -- intentionally no "br-" prefix
-  module.directive('modal', factory);
+  module.directive({modal: factory});
 }
 
 /* @ngInject */
