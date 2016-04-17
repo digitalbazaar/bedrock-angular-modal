@@ -11,7 +11,9 @@ define([], function() {
 
 function register(module) {
   module.component('brAlertModal', {
-    require: '^stackable',
+    require: {
+      stackable: '^stackable'
+    },
     bindings: {
       header: '@brModalHeader',
       ok: '@brModalOk',

@@ -11,7 +11,9 @@ define([], function() {
 
 function register(module) {
   module.component('brModal', {
-    require: '^stackable',
+    require: {
+      stackable: '^stackable'
+    },
     bindings: {
       title: '@?brTitle'
     },
