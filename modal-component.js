@@ -20,7 +20,7 @@ function register(module) {
       'br-modal-body': '?brModalBody',
       'br-modal-footer': '?brModalFooter'
     },
-    templateUrl: requirejs.toUrl('bedrock-angular-modal/modal.html')
+    templateUrl: requirejs.toUrl('bedrock-angular-modal/modal-component.html')
   });
 }
 
