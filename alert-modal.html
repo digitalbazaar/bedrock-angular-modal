@@ -3,7 +3,7 @@
     <div ng-transclude></div>
   </br-modal-body>
   <br-modal-footer>
-    <button type="button" class="btn btn-primary" ng-click="ctrl.stackable.close(null, 'ok')">{{$ctrl.ok || 'Ok'}}</button>
+    <button type="button" class="btn btn-primary" ng-click="$ctrl.stackable.close(null, 'ok')">{{$ctrl.ok || 'Ok'}}</button>
     <button type="button" class="btn btn-default stackable-cancel">{{$ctrl.cancel || 'Cancel'}}</button>
   </br-modal-footer>
 </br-modal>
