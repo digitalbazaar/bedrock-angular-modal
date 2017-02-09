@@ -1,10 +1,10 @@
 /*
- * Bedrock modal style
+ * Bedrock modal style.
  *
- * Copyright (c) 2012-2015 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2012-2017 Digital Bazaar, Inc. All rights reserved.
  */
-@import "../bedrock-angular/less/app.less";
-@import (less) "../angular-stackables/stackables.css";
+
+@modal-sheet-max-width: 767px;
 
 /* Modals */
 .modal {
@@ -15,4 +15,27 @@
 }
 .modal-footer .alert {
   text-align: left;
+}
+@media (max-width: @modal-sheet-max-width) {
+  .stackable.stackable-modal {
+    overflow: visible;
+
+    & .modal-dialog {
+      margin: 0;
+    }
+    & .modal-content {
+      border: none;
+      border-radius: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    & .modal-header, .modal-footer {
+      flex: 0 0 auto;
+    }
+    .modal-body {
+      flex: 1 1 auto;
+      overflow-y: scroll;
+    }
+  }
 }

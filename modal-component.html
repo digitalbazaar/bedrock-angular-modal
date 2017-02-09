@@ -1,24 +1,19 @@
 <div class="modal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div ng-multi-transclude-controller>
-        <div class="modal-header">
-          <div ng-multi-transclude="br-modal-header"
-            ng-transclude="br-modal-header">
-            <a class="close stackable-cancel">&times;</a>
-            <h3 class="modal-title">{{$ctrl.title}}</h3>
-          </div>
-        </div><!-- /.modal-header -->
-        <div class="modal-body">
-          <div ng-multi-transclude="br-modal-body"
-            ng-transclude="br-modal-body"></div>
-        </div><!-- /.modal-body -->
-        <div class="modal-footer">
-          <div ng-multi-transclude="br-modal-footer"
-            ng-transclude="br-modal-footer">
-            <button type="button"
-              class="btn btn-default stackable-cancel">Cancel</button>
-          </div>
+      <div class="modal-header">
+        <div ng-transclude="br-modal-header">
+          <a class="close stackable-cancel">&times;</a>
+          <h3 class="modal-title">{{$ctrl.title}}</h3>
+        </div>
+      </div><!-- /.modal-header -->
+      <div class="modal-body">
+        <div ng-transclude="br-modal-body"></div>
+      </div><!-- /.modal-body -->
+      <div class="modal-footer">
+        <div ng-transclude="br-modal-footer">
+          <button type="button"
+            class="btn btn-default stackable-cancel">Cancel</button>
         </div>
       </div><!-- /.modal-footer -->
     </div><!-- /.modal-content -->
