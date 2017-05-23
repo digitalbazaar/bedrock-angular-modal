@@ -1,21 +1,12 @@
 /*!
  * Bedrock Lazy-load + Alerts Modal Wrapper.
  *
- * Copyright (c) 2012-2016 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2012-2017 Digital Bazaar, Inc. All rights reserved.
  *
  * @author Dave Longley
  */
-define([], function() {
-
-'use strict';
-
-function register(module) {
-  // 'modal' replaces bootstrap "modal" class -- intentionally no "br-" prefix
-  module.directive({modal: factory});
-}
-
 /* @ngInject */
-function factory() {
+export default function factory() {
   return {
     restrict: 'C',
     transclude: true,
@@ -28,7 +19,3 @@ function factory() {
       </div>'
   };
 }
-
-return register;
-
-});
