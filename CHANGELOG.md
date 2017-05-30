@@ -1,5 +1,10 @@
 # bedrock-angular-modal ChangeLog
 
+## 5.0.2 - 2017-05-30
+
+### Fixed
+- Add `bootstrap` dependency.
+
 ## 5.0.1 - 2017-05-30
 
 ### Fixed
