@@ -9,6 +9,9 @@
     "bedrock-angular-alert": "^3.0.0",
     "angular-stackables": "^1.2.0"
   },
+  "bedrock": {
+    "browserDependencies": "all"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/digitalbazaar/bedrock-angular-modal.git"
