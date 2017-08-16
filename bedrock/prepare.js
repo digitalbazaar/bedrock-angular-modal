@@ -1,4 +1,4 @@
-var bedrock = GLOBAL.bedrock;
+const bedrock = GLOBAL.bedrock;
 
 bedrock.on('init', function() {
   // locate the top-level modal

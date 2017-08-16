@@ -10,7 +10,7 @@ import AlertModalComponent from './alert-modal-component.js';
 import ModalComponent from './modal-component.js';
 import ModalDirective from './modal-directive.js';
 
-var module = angular.module('bedrock.modal', ['stackables', 'bedrock.alert']);
+const module = angular.module('bedrock.modal', ['stackables', 'bedrock.alert']);
 
 module.component('brAlertModal', AlertModalComponent);
 module.component('brModal', ModalComponent);

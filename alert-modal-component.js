@@ -7,7 +7,7 @@
  */
 export default {
   require: {
-    stackable: '^stackable'
+    stackable: '^'
   },
   bindings: {
     header: '@brModalHeader',

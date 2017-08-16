@@ -1,6 +1,6 @@
 # bedrock-angular-modal
 
-An [AngularJS][] module that provides [bootstrap][]-styled, stackable modals.
+An [AngularJS][] module that provides stackable modals.
 
 ## Quick Examples
 
@@ -11,9 +11,8 @@ An [AngularJS][] module that provides [bootstrap][]-styled, stackable modals.
       <p>Some modal content...</p>
     </br-modal-body>
     <br-modal-footer>
-      <button type="button" class="btn btn-primary">Ok</button>
-      <button type="button"
-        class="btn btn-default stackable-cancel">Cancel</button>
+      <md-button type="button" class="md-primary md-raised">Ok</md-button>
+      <md-button type="button" class="stackable-cancel">Cancel</md-button>
     </br-modal-footer>
   </br-modal>
 </stackable-modal>
@@ -79,12 +78,11 @@ see [angular-stackables][].
 ## Setup
 
 ```
-bower install bedrock-angular-modal
+npm install bedrock-angular-modal
 ```
 
-If you're using [bedrock-angular][], installation of the module followed by
-a restart of your [bedrock][] server is sufficient to make the module
-available to your application.
+`bedrock-angular-modal` must be added to the `bedrock.browserDependencies` list
+in the `package.json` file of the dependent package.
 
 To manually add **bedrock-angular-modal** as a dependency:
 
@@ -101,6 +99,4 @@ TODO: -->
 [bedrock]: https://github.com/digitalbazaar/bedrock
 [bedrock-angular]: https://github.com/digitalbazaar/bedrock-angular
 [bedrock-angular-lazy-compile]: https://github.com/digitalbazaar/bedrock-angular-lazy-compile
-[bootstrap]: http://getbootstrap.com/
-[bower]: http://bower.io/
 [AngularJS]: https://github.com/angular/angular.js
