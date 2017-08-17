@@ -14,8 +14,4 @@ module.exports = function(bedrock) {
     protractor.params.config.onPrepare.push(
       path.join(__dirname, './prepare'));
   }
-
-  bedrock.config.requirejs.config.shim['dialog-polyfill'] = {
-    exports: 'dialogPolyfill'
-  };
 };
