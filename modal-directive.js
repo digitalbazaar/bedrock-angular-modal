@@ -14,7 +14,6 @@ export default function factory() {
     template: '\
       <div br-lazy-compile="!stackable || stackable.isOpen" \
         br-lazy-id="br-modal"> \
-        <div br-alerts br-fixed="true"></div> \
         <div ng-transclude></div> \
       </div>'
   };
