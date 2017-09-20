@@ -7,7 +7,7 @@
   "dependencies": {
     "angular": "~1.6.4",
     "angular-stackables": "^1.2.0",
-    "bedrock-angular-alert": "^3.0.0",
+    "bedrock-angular-alert": "digitalbazaar/bedrock-angular-alert#material",
     "bedrock-angular-material": "^1.0.0"
   },
   "bedrock": {
