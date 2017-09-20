@@ -25,12 +25,14 @@ module.config($provide => {
     $delegate.show = options => {
       options = options._options || {};
       if(!('parent' in options)) {
-        const dialog = angular.element('dialog:not(:has(dialog))');
-        if(dialog[0]) {
-          options.parent = 'dialog';
-        } else {
-          options.parent = 'body';
-        }
+        // find "highest" open dialog on the stack or use body
+        let parent;
+        let child = document.body;
+        do {
+          parent = child;
+          child = parent.querySelector('dialog[open]');
+        } while(child);
+        options.parent = parent;
       }
       return show.call($delegate, options);
     };
