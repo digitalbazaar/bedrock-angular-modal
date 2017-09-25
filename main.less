@@ -8,6 +8,11 @@
 
 @modal-sheet-max-width: 959px;
 
+// disable top-level scrolling; scroll modal content instead
+.stackable.stackable-modal {
+  overflow-y: hidden;
+}
+
 .modal-container {
   display: flex;
   margin: 30px 15%;
@@ -15,6 +20,7 @@
   md-dialog {
     flex: 1 1 auto;
     max-width: 100%;
+    height: calc(100vh - 60px);
 
     & > form {
       flex: 1 1 auto;
@@ -34,10 +40,6 @@
 }
 
 @media (max-width: @modal-sheet-max-width) {
-  .stackable.stackable-modal {
-    overflow-y: hidden;
-  }
-
   .modal-container {
     margin: 0;
 
