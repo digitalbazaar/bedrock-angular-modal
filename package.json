@@ -2,11 +2,11 @@
   "name": "bedrock-angular-modal",
   "version": "5.0.3-0",
   "description": "An AngularJS module that provides bootstrap-styled, stackable modals.",
-  "main": "index.js",
-  "less": "modal.less",
+  "browser": "index.js",
+  "less": "main.less",
   "dependencies": {
-    "angular": "~1.6.4",
     "angular-stackables": "^1.2.0",
+    "bedrock-angular": "^4.0.0",
     "bedrock-angular-alert": "digitalbazaar/bedrock-angular-alert#material",
     "bedrock-angular-lazy-compile": "^3.0.1",
     "bedrock-angular-material": "^1.0.0"
