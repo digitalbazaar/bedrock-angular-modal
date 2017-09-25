@@ -8,15 +8,12 @@
 import angular from 'angular';
 import AlertModalComponent from './alert-modal-component.js';
 import ModalComponent from './modal-component.js';
-import ModalDirective from './modal-directive.js';
 
 const module = angular.module('bedrock.modal', [
   'stackables', 'bedrock.alert', 'bedrock.lazyCompile']);
 
 module.component('brAlertModal', AlertModalComponent);
 module.component('brModal', ModalComponent);
-// 'modal' replaces bootstrap "modal" class -- intentionally no "br" prefix
-module.directive('modal', ModalDirective);
 
 /* @ngInject */
 module.config($provide => {

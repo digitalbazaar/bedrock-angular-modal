@@ -1,20 +1,28 @@
-<div class="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div class="modal-container">
+  <md-dialog class="md-dialog-fullscreen md-transition-in">
+    <form class="modal-content">
       <div class="modal-header">
         <div ng-transclude="br-modal-header">
-          <a class="close stackable-cancel">&times;</a>
-          <h3 class="modal-title">{{$ctrl.title}}</h3>
+          <md-toolbar>
+            <div class="md-toolbar-tools">
+              <h2>{{$ctrl.title}}</h2>
+              <span flex></span>
+              <button type="button"
+                class="md-icon-button md-button md-ink-ripple close stackable-cancel">
+                <i class="material-icons">clear</i>
+              </button>
+            </div>
+          </md-toolbar>
         </div>
       </div><!-- /.modal-header -->
-      <div class="modal-body">
+      <md-dialog-content class="modal-body">
         <div ng-transclude="br-modal-body"></div>
-      </div><!-- /.modal-body -->
-      <div class="modal-footer">
+      </md-dialog-content><!-- /.modal-body -->
+      <md-dialog-actions class="modal-footer">
         <div ng-transclude="br-modal-footer">
           <md-button class="stackable-cancel">Cancel</md-button>
         </div>
-      </div><!-- /.modal-footer -->
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+      </md-dialog-actions><!-- /.modal-footer -->
+    </form>
+  </md-dialog>
+</div>
