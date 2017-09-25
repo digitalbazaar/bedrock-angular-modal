@@ -9,8 +9,7 @@ import angular from 'angular';
 import AlertModalComponent from './alert-modal-component.js';
 import ModalComponent from './modal-component.js';
 
-const module = angular.module('bedrock.modal', [
-  'stackables', 'bedrock.alert', 'bedrock.lazyCompile']);
+const module = angular.module('bedrock.modal', ['stackables', 'bedrock.alert']);
 
 module.component('brAlertModal', AlertModalComponent);
 module.component('brModal', ModalComponent);
