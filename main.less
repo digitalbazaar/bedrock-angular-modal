@@ -22,8 +22,11 @@
     max-width: 100%;
     height: calc(100vh - 60px);
 
-    & > form {
+    & > .modal-content {
+      display: flex;
       flex: 1 1 auto;
+      flex-direction: column;
+      overflow: auto;
 
       .modal-header {
         flex: 0 0 auto;
