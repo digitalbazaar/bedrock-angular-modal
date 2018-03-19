@@ -1,5 +1,7 @@
 # bedrock-angular-modal ChangeLog
 
+## 6.0.0 - 2018-03-19
+
 ### Changed
 - Update to material design.
 
