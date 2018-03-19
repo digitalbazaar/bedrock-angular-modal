@@ -3,7 +3,7 @@
 ## 6.0.0 - 2018-03-19
 
 ### Changed
-- Update to material design.
+- **BREAKING**: Update to material design.
 
 ## 5.0.2 - 2017-05-30
 
